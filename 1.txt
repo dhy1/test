@@ -1,0 +1,27 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAxu46c2IJtcGyBw3nh+Ll+JPxLtxSI1RTwUwI1m+IEL"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/ssh/sshd_config.d/20-custom.conf",
+        "contents": {
+          "compression": "",
+          "source": "data:,IPQoS%20cs0%20cs0%0A"
+        },
+        "mode": 420
+      }
+    ]
+  }
+}
